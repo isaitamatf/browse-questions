@@ -1,0 +1,24 @@
+#bq-pagination {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  > .bq-pagination-content {
+    display: flex;
+    flex-direction: row;
+    border-radius: 6px;
+    background-color: #00BC8C;
+    > .bq-pagination-value {
+      cursor: pointer;
+      padding: 18px 26px;
+      transition: all .35s;
+      font-size: 19px;
+      color: #FFFFFF;
+      border-radius: 6px;
+    }
+    > .bq-pagination-value-selected,
+    > .bq-pagination-value:hover {
+      background-color: #00dba3;
+    }
+  }
+}
