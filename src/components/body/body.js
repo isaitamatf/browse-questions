@@ -1,4 +1,5 @@
 import React from 'react';
+import { Table } from '../../components';
 import { BROWSE_QUESTIONS_TEXT } from '../../constants';
 import './body.scss';
 
@@ -11,6 +12,7 @@ export default function Body({browserQuestions}) {
       <div className='bq-body-text'>
         {BROWSE_QUESTIONS_TEXT}
       </div>
+      <Table browserQuestions={browserQuestions} />
     </div>
   );
 }

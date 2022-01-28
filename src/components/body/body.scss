@@ -1,11 +1,16 @@
 #bq-body {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   background-color: #383E4E;
   height: calc(100% - 126px);
   padding: 32px 128px;
   .bq-body-text {
+    display: flex;
+    justify-content: flex-start;
     font-size: 24px;
     color: #FFFFFF;
+    width: 100%;
+    margin-bottom: 8px;
   }
 }

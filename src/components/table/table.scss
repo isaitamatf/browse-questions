@@ -1,0 +1,32 @@
+#bq-table {
+  height: calc(100% - 40px);
+  width: 100%;
+  overflow-y: auto;
+  > table {
+    width: 100%;
+    > .bq-table-header {
+      background-color: #262A35;
+      .bq-table-header-text {
+        color: #FFFFFF;
+        text-align: left;
+        padding: 8px;
+        font-size: 14px;
+      }
+    }
+    > .bq-table-body {
+      background: rgba(0, 0, 0, 0.6);
+      .bq-table-body-text {
+        color: #FFFFFF;
+        text-align: left;
+        padding: 8px;
+        font-size: 14px;
+      }
+    }
+    .bq-table-first-letter {
+      text-transform: capitalize;
+    }
+    .bq-table-green {
+      color: #0CE3AC !important;
+    }
+  }
+}
