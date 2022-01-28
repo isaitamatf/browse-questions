@@ -1,17 +1,16 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { browserQuestionsAsync, getBrowserQuestions } from '../../reducer'
+import { BROWSE_QUESTIONS_TEXT } from '../../constants';
 import './body.scss';
 
-export default function Body() {
-  const dispatch = useDispatch();
-  const browserQuestions = useSelector(getBrowserQuestions);
-  console.log('ISAAC browserQuestions', browserQuestions);
+/**
+ * @param browserQuestions Data from the API
+ */
+export default function Body({browserQuestions}) {
   return (
     <div id="bq-body">
-      <button onClick={() => dispatch(browserQuestionsAsync())}>
-        Load Browser Questions
-      </button>
+      <div className='bq-body-text'>
+        {BROWSE_QUESTIONS_TEXT}
+      </div>
     </div>
   );
 }

@@ -1,3 +1,11 @@
 #bq-body {
-  
+  display: flex;
+  flex-direction: row;
+  background-color: #383E4E;
+  height: calc(100% - 126px);
+  padding: 32px 128px;
+  .bq-body-text {
+    font-size: 24px;
+    color: #FFFFFF;
+  }
 }
