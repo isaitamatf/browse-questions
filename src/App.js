@@ -1,8 +1,11 @@
-import './App.css';
+import { Body } from './components';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App"></div>
+    <div id="App">
+      <Body />
+    </div>
   );
 }
 
